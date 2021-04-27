@@ -1,0 +1,3 @@
+- If anything is passed to the next() function, the current request will be concidered as en error
+    -> express will then skip all remaining non errorhandling routing-handlers and middleware (all those who do not receive an err parameter)
+    -> except the inputstring 'route'. This will only skip the sub-stack and call the next middlepare on routerlevel 
